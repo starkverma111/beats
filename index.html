@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- link CSS -->
+  <link rel="stylesheet" href="style.css">
+
+
+    <title>beats</title>
+	
+  </head>
+  <body>
+  <div class="shadow-sm p-1 mb-5 bg-white rounded" >
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><span style="font-size:24px; color:pink;">&#9829; <b>beats</b></span></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="sf">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Feature</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  </div>
+  
+
+
+	
+<div class="cont">	
+	
+	
+		<div class="row">
+			<div class="col-md-6  col-lg-6">
+					<div class="d-none d-md-block">
+					<img src="img/love1.jpg" class="ig"/>
+					</div>
+				</div>
+						
+		<div class="col-md-6 col-lg-6">
+		<h2 style="color:pink;">Try Now Love beats</h2>
+				<hr/>
+  
+			  <form method="POST" onclick="return false" id="myform">
+				<div class="form-group">
+				  <label for="text">Your Name:</label>
+					<input type="text" class="form-control" id="fname" placeholder="Your name" name="fname" autocomplete="off">
+				</div>
+				<br/>
+				 <div class="form-group">
+				  <label for="text">Crush Name</label>
+					<input type="text" class="form-control" id="sname" placeholder="Crush name" name="sname" autocomplete="off">
+				</div>
+				<br/>
+				<br/>
+				<button type="submit" class="btn btn btl" id="btn" onclick="checkloveper()" >Submit</button>
+
+				<br/><br/><br/>
+				<div class="form-group">
+				 <h6 class="text-center" id="demp"> </h6>
+				 <br/>
+				   <h2 class="text-center">  <span style="font-size:25px; color:red;">&#10084;</span>  Love Percentage  <span style="font-size:25px; color:red;">&#10084;</span>  </h2>
+				   <h1 class="text-center"><span id="demo"></span></h1>
+				   <span id="dem"></span>
+				</div>
+				<br/>
+				
+			  </form>
+		   </div>
+	</div>	
+</div>
+<br/>
+<br/>
+
+<div class="container" id="spc">
+
+		<div class="row text-center">
+		<h1>Top of the Week</h1>
+		<div class="col-md-3">
+		<div class="card">
+		  <img src="img/img1.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h6 class="card-title"></h6>
+			<p class="card-text">The brightness of my day doesn’t depend on the amount of sunshine. Everything depends on your smile.</p>
+		  </div>
+		</div>
+		</div>
+
+
+
+		<div class="col-md-3">
+
+		<div class="card">
+		  <img src="img/img2.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h6 class="card-title"></h6>
+			<p class="card-text">Reaching for your hand brings me such joy and knowing that you are mine forever brings me peace.</p>
+		  </div>
+		</div>
+		</div>
+
+
+		<div class="col-md-3">
+
+		<div class="card">
+		  <img src="img/img3.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h6 class="card-title"></h6>
+			<p class="card-text">No matter where I went, I always knew my way back to you. You are my compass star.</p>
+		  </div>
+		</div>
+		</div>
+
+
+		<div class="col-md-3">
+
+		<div class="card">
+		  <img src="img/img4.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+			<h6 class="card-title"></h6>
+			<p class="card-text">My love for you has no depth; its boundaries are ever-expanding. My love and my life with you will be a never-ending story.</p>
+		  </div>
+		</div>
+		</div>
+
+</div></div>
+
+
+	<div class="footer">
+		<br/>
+			<p><b>Crafted with <span style="font-size:16px; color:red;">&#10084;</span> by Stark Verma</b></p>
+	</div>
+	
+	
+	
+
+    <script>
+ function checkloveper(){
+
+  var name = document.getElementById('fname').value;
+  var lname = document.getElementById('sname').value;
+  
+  
+  var name = name.toLowerCase();
+  var lname = lname.toLowerCase();
+   
+   if(name=="sachin" && lname=="shreya"){
+   			         lovdata = 95;
+			         lovdata = Math.floor(lovdata);
+					 			  document.getElementById("demp").innerHTML = "<span style='background-color:#ff007f;color:white;display: inline-block; padding-top:5px;padding-bottom:5px; padding-left:10px; padding-right:10px; border-radius:3px;text-transform:capitalize;'> &#10084; "+name+" love "+lname+"</span>";
+
+                          document.getElementById("demo").innerHTML = lovdata + "%"; 
+					   		document.getElementById("dem").innerHTML = "Sometimes, I knock on the doors of your heart, just to make sure I still live there.";
+
+
+   
+   
+   }
+   else if(name=="shreya" && lname=="sachin"){
+     lovdata = 95;
+			         lovdata = Math.floor(lovdata);
+					 			  document.getElementById("demp").innerHTML = "<span style='background-color:#ff007f;color:white;display: inline-block; padding-top:5px;padding-bottom:5px; padding-left:10px; padding-right:10px; border-radius:3px;text-transform:capitalize;'> &#10084; "+name+" love "+lname+"</span>";
+
+                          document.getElementById("demo").innerHTML = lovdata + "%"; 
+					   		document.getElementById("dem").innerHTML = "You are the reason I wake up with a smile every morning. You are the secret to my peaceful nights.";
+
+   }
+   
+   
+   else{
+   
+		if(name == ""){
+			 alert('Please Enter Your Name');
+			 }else if (name.length <=2 ) {
+			     alert('Min lenght is 3')
+			       }else if(!isNaN(name)){
+			          alert('Numbers are Not allowed');
+			       }
+
+			  else if(lname == ""){
+			      alert('Please Enter Your Crush Name');
+			         }else if (lname.length <=2 ) {
+			            alert('Min lenght is 3')
+			             }else if(!isNaN(lname)){
+			                 alert('Numbers are Not allowed');
+			             }
+			  else{
+			       var lovdata = Math.random() * 100;
+			         lovdata = Math.floor(lovdata);
+			           document.getElementById("demo").innerHTML = lovdata + "%"; 
+
+			     }
+			  if (lovdata >=65){
+			  document.getElementById("demp").innerHTML = "<span style='background-color:#ff007f;color:white;display: inline-block; padding-top:5px;padding-bottom:5px; padding-left:10px; padding-right:10px; border-radius:3px;text-transform:capitalize;'> &#10084; "+name+" love "+lname+"</span>";
+
+			         document.getElementById("dem").innerHTML = " My favorite place in the world is by your side. My favorite distraction is you.";
+                  
+
+				  }
+			  else{
+			  
+			     
+			  }
+			   
+		 }
+ 
+ }
+</script>	
+	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+</html>
